@@ -8,4 +8,4 @@ FROM debian:9.5-slim
 COPY --from=build /go/bin/slides /usr/local/bin
 
 WORKDIR /slides
-ENTRYPOINT /usr/local/bin/slides
+ENTRYPOINT [ "/usr/local/bin/slides" ]
